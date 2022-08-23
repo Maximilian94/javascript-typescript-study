@@ -25,8 +25,8 @@ var values = [
 ];
 
 console.log(setsMatch(findAll(null, values), [null, undefined]) === true);
-// console.log(setsMatch(findAll(undefined, values), [null, undefined]) === true);
-// console.log(setsMatch(findAll(0, values), [0, '0']) === true);
+console.log(setsMatch(findAll(undefined, values), [null, undefined]) === true);
+console.log(setsMatch(findAll(0, values), [0, '0']) === true);
 // console.log(setsMatch(findAll(-0, values), [-0]) === true);
 // console.log(setsMatch(findAll(13, values), [13]) === true);
 // console.log(setsMatch(findAll(42, values), [42, '42']) === true);
@@ -73,12 +73,11 @@ function setsMatch(arr1, arr2) {
 }
 
 function findAll(param, values) {
-	const result = values.filter((e) => {
-		if (e == param) {
-			return true;
-		}
-		return false;
-	});
-	console.log('param', param);
-	return result;
+	const response = [];
+	for (let index in values) {
+		if (Object.is(values[index], param)) response.push(values[index]);
+	}
+	console.log(response);
+
+	return response;
 }
