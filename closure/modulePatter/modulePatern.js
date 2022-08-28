@@ -3,7 +3,7 @@
 let speed = 0;
 
 export let car = {
-  acelerate: () => speed + 10,
-  slowDown: () => speed - 10,
+  acelerate: () => (speed = speed + 10),
+  slowDown: () => (speed = speed - 10),
   showSpeed: () => console.log(speed),
 };
