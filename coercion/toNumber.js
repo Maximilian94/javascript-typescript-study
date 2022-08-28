@@ -1,2 +1,5 @@
-const test = false;
-console.log(test.toNumber());
+//  toNumber on array
+console.log([""]);
+
+//  toNumber on Object
+console.log({}.valueOf().toString());
