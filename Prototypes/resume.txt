@@ -1,0 +1,2 @@
+Pelo que entendi, quando usamos o new, nos na verdade estamos chamando o construtor, para construir um novo objeto e fazer bind do que esta
+fora do construtor
