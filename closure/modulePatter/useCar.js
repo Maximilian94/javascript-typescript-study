@@ -1,4 +1,4 @@
-import { car } from "./modulePatern.js";
+import { car } from './modulePatern.js';
 
 car.showSpeed();
 car.acelerate();
